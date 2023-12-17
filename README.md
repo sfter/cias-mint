@@ -58,13 +58,13 @@ MINT_TIMES=10
 node wallet_gen.js
 ```
 
-### Step 3: 从主钱包（资金钱包）批量转帐到 Mint 钱包
+### Step 4: 从主钱包（资金钱包）批量转帐到 Mint 钱包
 
 ```bash
 node transfer.js
 ```
 
-### Step 4: 运行 Mint 程序开始 Mint
+### Step 5: 运行 Mint 程序开始 Mint
 
 ```bash
 node mint.js
