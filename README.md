@@ -54,18 +54,43 @@ MINT_TIMES=10
 
 ### Step 3: 批量生成 Mint 钱包
 
-```
+```bash
 node wallet_gen.js
 ```
 
 ### Step 3: 从主钱包（资金钱包）批量转帐到 Mint 钱包
 
-```
+```bash
 node transfer.js
 ```
 
 ### Step 4: 运行 Mint 程序开始 Mint
 
-```
+```bash
 node mint.js
 ```
+
+### 特别说明
+如果 keplr 钱包导不出私钥，可以通过如下方法来做
+> - 先把 .env 文件配置好，PRIVATE_KEY 留空。
+>
+> 
+> - 使用 node wallet_gen.js 生成钱包
+> 
+> 
+> - 打开当前目录下的 wallet.json 文件
+>
+> 
+> - 选择其中任意一个钱包做为主钱包。
+> 
+> 
+> - 打开 keplr 钱包，向你在上面第4步选择的钱包地址转一些 $TIA 进去。
+> 
+> 
+> - 将上面第4步选择的钱包地址配置到 .env 文件里的 PRIVATE_KEY 字段里。
+> 
+> 
+> - 执行 node transfer.js 将会从上面第4步选择的钱包向其它 Mint 的钱包批量转帐。
+> 
+> 
+> - 执行 node mint.js 开始批量 Mint，完成 OK。
