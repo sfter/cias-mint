@@ -1,0 +1,18 @@
+{
+  "name": "cias",
+  "version": "1.0.0",
+  "main": "mint.js",
+  "license": "MIT",
+  "dependencies": {
+    "@cosmjs/crypto": "^0.32.0",
+    "@cosmjs/encoding": "^0.32.0",
+    "@cosmjs/proto-signing": "^0.32.0",
+    "@cosmjs/stargate": "^0.32.0",
+    "axios": "^1.6.2",
+    "bip39": "^3.1.0",
+    "cosmjs-types": "^0.9.0",
+    "cosmos-lib": "^1.1.0",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security"
+  }
+}
